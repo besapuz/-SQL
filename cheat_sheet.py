@@ -49,8 +49,11 @@ def execute_query(connection, query):
         print("Query executed successfully")
     except OperationalError as e:
         print(f"The error '{e}' occurred")
-Создаем таблицу:
-Здесь для указания столбцов с автоматическим инкрементом используется ключевое слово SERIAL
+
+        
+#Создаем таблицу:
+#Здесь для указания столбцов с автоматическим инкрементом используется ключевое слово SERIAL
+
 create_users_table = """
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
